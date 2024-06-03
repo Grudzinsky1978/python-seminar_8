@@ -76,6 +76,7 @@ def print_contacts():
     # print(list(enumerate(list_contacts, 1)))
     for i, contact in enumerate(list_contacts, 1):
         print(i, contact + "\n")
+    print("----------------------------\n")
 
 
 def search_contact():
@@ -98,7 +99,7 @@ def search_contact():
         contact_lst = contact_str.split()
         # print(contact_lst)
         if search in contact_lst[index_var]:
-            print(contact_str)
+            print(contact_str + "\n")
 
 def copy_to_file_contact():
     print_contacts()
